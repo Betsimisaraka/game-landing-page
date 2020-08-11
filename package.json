@@ -4,7 +4,9 @@
   "description": "1. Create `index.html` file\r 1. Install `node-sass`",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass scss -o webroot/css",
+    "css:watch": "npm run css && node-sass scss -w -o webroot/css"
   },
   "repository": {
     "type": "git",
