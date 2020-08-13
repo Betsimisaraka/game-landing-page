@@ -2,4 +2,62 @@
 
 .masthead {
     background-image: image('masthead-image.png');
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.masthead_heading {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 33px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $base-colour;
+    padding-block-start: 172px;
+}
+
+.masthead_description {
+    font-family: 'Bebas Neue';
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: $base-colour;
+}
+
+.masthead_button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: $background-colour;
+    padding: 1rem;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 2.94008px;
+    border: none;
+}
+
+.story {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    align-self: flex-start;
+    text-transform: uppercase;
+    color: $base-colour;
+    padding-block-end: 57px;
+    background-image: image('scroll-down.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
 }

@@ -1,3 +1,34 @@
 $font_default: 'Open Sans';
-$font_fallback: Arial, Helvetica, sans-serif;
-$font_stack: $font_default, $font_fallback;
+$font_fallback:
+    Arial,
+    Helvetica,
+    sans-serif;
+$font_stack: 
+    $font_default,
+    $font_fallback;
+
+$font-faces: 
+    (
+       name: 'Bebas Neue Bold',
+       family: 'Bebas Neue',
+       system-name: 'Bebas-Neue-Bold',
+       filename: 'babasneue-bold',
+       style: 'normal',
+       weight: 400,
+    ),
+    (
+       name: 'Open Sans Bold',
+       family: 'Open Sans',
+       system-name: 'Open-Sans-Bold',
+       filename: 'opensans-bold',
+       style: 'normal',
+       weight: 700,
+    ),
+    (
+       name: 'Open Sans Regular',
+       family: 'Open Sans',
+       system-name: 'Open-Sans-Regular',
+       filename: 'opensans-regular',
+       style: 'normal',
+       weight: 400,
+    );
