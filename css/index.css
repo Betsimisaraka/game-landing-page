@@ -1,5 +1,26 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Bold"), local("Bebas-Neue-Bold"), url("../fonts/babasneue-bold.woff2") format(woff2), url("../fonts/babasneue-bold.woff") format(woff);
+  font-style: "normal";
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold"), local("Open-Sans-Bold"), url("../fonts/opensans-bold.woff2") format(woff2), url("../fonts/opensans-bold.woff") format(woff);
+  font-style: "normal";
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Regular"), local("Open-Sans-Regular"), url("../fonts/opensans-regular.woff2") format(woff2), url("../fonts/opensans-regular.woff") format(woff);
+  font-style: "normal";
+  font-weight: 400; }
+
 html {
   font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+
+body {
+  text-align: center; }
 
 .site_header {
   display: flex;
@@ -33,4 +54,57 @@ input[type="checkbox"] {
   transform: translateX(-150%); }
 
 .masthead {
-  background-image: url("../img/masthead-image.png"); }
+  background-image: url("../img/masthead-image.png");
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; }
+
+.container {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.masthead_heading {
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 33px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-block-start: 172px; }
+
+.masthead_description {
+  font-family: 'Bebas Neue';
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: #FFFFFF; }
+
+.masthead_button {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1A1917;
+  padding: 1rem;
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 2.94008px;
+  border: none; }
+
+.story {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  align-self: flex-start;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-block-end: 57px;
+  background-image: url("../img/scroll-down.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center center; }
