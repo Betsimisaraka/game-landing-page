@@ -17,5 +17,20 @@ body > header > .site_header__heading {
   background-repeat: no-repeat;
   width: 32px; }
 
+body > header > .icon_menu {
+  background-color: black;
+  width: 23px;
+  background-image: url("../img/menu-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 23px 17px; }
+
+input[type="checkbox"] {
+  position: absolute;
+  left: 95%;
+  visibility: hidden; }
+
+.navigation {
+  transform: translateX(-150%); }
+
 .masthead {
   background-image: url("../img/masthead-image.png"); }
