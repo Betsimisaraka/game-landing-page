@@ -1,2 +1,21 @@
+html {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+
+.site_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+header span {
+  display: block;
+  text-indent: -9999px; }
+
+body > header > .site_header__heading {
+  background-image: url("../img/logo.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  width: 32px; }
+
 .masthead {
   background-image: url("../img/masthead-image.png"); }

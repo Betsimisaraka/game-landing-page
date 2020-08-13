@@ -10,8 +10,8 @@
 
 <body>
     <header class="site_header">
-        <h1>
-            <a href="/logo">Logo</a>
+        <h1 class="site_header__heading">
+            <a href="/logo"><span class="logo_span">Logo</span> </a>
         </h1>
         <nav>
             <ul>
@@ -25,13 +25,17 @@
         <form action="." method="GET">
             <label for="lang_dropdown">Language</label>
             <select name="lang" id="lang_dropdown">
-              <option lang="en" value="en" label="English">
-              <option lang="ru" value="ru" label="русский">
-              <option lang="fr" value="fr" label="Français">
-              <option lang="de" value="de" label="Deutsch">
+                <option lang="en" value="en" label="English">
+                <option lang="ru" value="ru" label="русский">
+                <option lang="fr" value="fr" label="Français">
+                <option lang="de" value="de" label="Deutsch">
             </select>
             <button type="submit">Save</button>
-          </form>
+        </form>
+        <input type="checkbox" id="menu_checkbox">
+        <label for="menu_checkbox" class="icon icon_menu">
+            <span class="a11y">Open the menu</span>
+        </label>
     </header>
     <main>
         <header class="masthead">
@@ -84,7 +88,9 @@
                         <details>
                             <summary>Create allies and enemies</summary>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae, impedit nam, reiciendis commodi itaque cupiditate minima inventore molestiae voluptatum ad, dolor quia ea accusantium nesciunt? Sequi, itaque. Quidem, natus.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae, impedit
+                                nam, reiciendis commodi itaque cupiditate minima inventore molestiae voluptatum ad,
+                                dolor quia ea accusantium nesciunt? Sequi, itaque. Quidem, natus.
                             </p>
                         </details>
                     </li>
@@ -92,13 +98,15 @@
                         <details>
                             <summary>Impress your audience</summary>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nobis, qui modi, ratione ea saepe eum iure officiis iusto mollitia nihil unde odio, possimus quo consectetur praesentium harum nesciunt illum?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nobis, qui modi,
+                                ratione ea saepe eum iure officiis iusto mollitia nihil unde odio, possimus quo
+                                consectetur praesentium harum nesciunt illum?
                             </p>
                         </details>
                     </li>
                 </ul>
-            </article>
-            </div>
+        </article>
+        </div>
         </article>
         <article>
             <div class="container">

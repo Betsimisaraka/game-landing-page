@@ -1,5 +1,26 @@
 @import "variables";
 
 .site_header {
-    // background-color: $background-colour;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start; 
 }
+
+header span {
+    display: block;
+    text-indent: -9999px;
+}
+
+body > header > .site_header__heading{
+    background-image: image('logo.png');
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    width: 32px;
+}
+
+// body > header > #menu_checkbox {
+//     background-image: image('menu-icon.png');
+//     background-size: 200px;
+//     width: 200px;
+// }
