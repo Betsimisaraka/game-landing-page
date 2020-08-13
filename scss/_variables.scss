@@ -1,6 +1,7 @@
 @import "./variables/fonts";
 @import "./variables/variable";
 @import "./variables/colour";
+@import "./variables/mixin";
 
 @function image($filename) {
     @return url("../img/#{$filename}");
