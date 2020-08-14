@@ -6,4 +6,34 @@ html {
 
 body {
     text-align: center;
+    margin: 0;
+    color: #FFFFFF;
+    background-color: #1A1917;
 }
+
+ul {
+    @include nav-ul;
+}
+.container {
+    padding: 1px;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+}
+.article_heading {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.article_questions {
+    font-family: 'Bebas Neue';
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
