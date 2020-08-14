@@ -10,55 +10,56 @@
 
 <body>
     <header class="site_header">
-        <h1 class="site_header__heading">
-            <a href="/logo"><span class="logo_span">Logo</span> </a>
-        </h1>
-        <nav class="navigation">
-            <ul>
-                <li><a href="/main">Main</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/game-features">Game features</a></li>
-                <li><a href="/system-requirements">System requirements</a></li>
-                <li><a href="/quotes">Quotes</a></li>
-            </ul>
-        </nav>
-        <form action="." method="GET">
-            <label for="lang_dropdown">Language</label>
-            <select name="lang" id="lang_dropdown">
-                <option lang="en" value="en" label="English">
-                <option lang="ru" value="ru" label="русский">
-                <option lang="fr" value="fr" label="Français">
-                <option lang="de" value="de" label="Deutsch">
-            </select>
-            <button type="submit">Save</button>
-        </form>
-        <input type="checkbox" id="menu_checkbox">
-        <label for="menu_checkbox" class="icon_menu">
-            <span class="a11y">Open the menu</span>
-        </label>
+        <div class="container container1">
+            <h1 class="site_header__heading">
+                <a href="/logo"><span class="logo_span">Logo</span> </a>
+            </h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/main">Main</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/game-features">Game features</a></li>
+                    <li><a href="/system-requirements">System requirements</a></li>
+                    <li><a href="/quotes">Quotes</a></li>
+                </ul>
+            </nav>
+            <form action="." method="GET">
+                <label for="lang_dropdown">Language</label>
+                <select name="lang" id="lang_dropdown">
+                    <option lang="en" value="en">Eng</option>
+                    <option lang="ru" value="ru">Pyc</option>
+                    <option lang="fr" value="fr">Fra</option>
+                    <option lang="de" value="de">Deu</option>
+                </select>
+            </form>
+            <input type="checkbox" id="menu_checkbox">
+            <label for="menu_checkbox" class="icon_menu">
+                <span class="a11y">Open the menu</span>
+            </label>
+        </div>
     </header>
     <main>
         <header class="masthead">
             <div class="container">
-            <h2 class="masthead_heading">
-                Survive at all costs
-            </h2>
-            <p class="masthead_description">
-                Experience new social battle royale game
-            </p>
-            <button class="masthead_button">
-                Buy now on steam | $14.99
-            </button>
-            <p class="story">
-                The story
-            </p>
-        </div>
+                <h2 class="masthead_heading article_heading">
+                    Survive at all costs
+                </h2>
+                <p class="masthead_description article_questions">
+                    Experience new social battle royale game
+                </p>
+                <button class="masthead_button">
+                    Buy now on steam | $14.99
+                </button>
+                <p class="story">
+                    The story
+                </p>
+            </div>
         </header>
-        <article>
+        <article class="royal_game">
             <div class="container">
                 <header>
-                    <h3>social battle royale game</h3>
-                    <p>What is SOS?</p>
+                    <h3 class="article_heading">social battle royale game</h3>
+                    <p class="article_questions">What is SOS?</p>
                 </header>
                 <p>Each round, you and 15 other contestants compete to
                     escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
@@ -73,10 +74,10 @@
         <article class="features">
             <div class="container">
                 <header>
-                    <h3>
+                    <h3 class="article_heading">
                         Features
                     </h3>
-                    <p>What’s so special?</p>
+                    <p class="article_questions">What’s so special?</p>
                 </header>
                 <ul>
                     <li>
@@ -107,14 +108,13 @@
                         </details>
                     </li>
                 </ul>
+            </div>
         </article>
-        </div>
-        </article>
-        <article>
+        <article class="requirement">
             <div class="container">
                 <header>
-                    <h3>system requirements</h3>
-                    <p>Can My Computer Run this game?</p>
+                    <h3 class="article_heading">system requirements</h3>
+                    <p class="article_questions">Can My Computer Run this game?</p>
                 </header>
                 <ul>
                     <li>
@@ -145,10 +145,10 @@
         <article>
             <div class="container">
                 <header>
-                    <h3>
+                    <h3 class="article_heading">
                         Express quotes
                     </h3>
-                    <p>
+                    <p class="article_questions">
                         What people think?
                     </p>
                 </header>
@@ -183,10 +183,10 @@
         <article>
             <div class="container">
                 <header>
-                    <h3>
+                    <h3 class="article_heading">
                         Newsletter subscribe
                     </h3>
-                    <p>
+                    <p class="article_questions">
                         Want to stay in touch?
                     </p>
                 </header>
