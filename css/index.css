@@ -22,8 +22,7 @@ html {
 body {
   text-align: center;
   margin: 0;
-  color: #FFFFFF;
-  background-color: #1A1917; }
+  color: #FFFFFF; }
 
 ul {
   list-style: none;
@@ -55,7 +54,10 @@ ul {
 
 .site_header {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0; }
 
 label {
   display: block;
@@ -68,8 +70,7 @@ label {
 
 .container1 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  flex-direction: row; }
 
 header span {
   display: block;
@@ -115,11 +116,12 @@ select {
   background-image: url("../img/masthead-image.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 40% 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 571px; }
 
 .masthead_heading {
   padding-block-start: 172px; }
@@ -163,3 +165,12 @@ select {
 
 .requirement {
   background: radial-gradient(21.54% 18.14% at 50.49% 75.05%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080A0B 100%); }
+
+.press_quotes {
+  background: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%); }
+
+.footer {
+  background-color: black; }
+
+.newsletter {
+  background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%); }
