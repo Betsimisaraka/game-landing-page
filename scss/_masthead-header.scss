@@ -4,11 +4,12 @@
     background-image: image('masthead-image.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 40% 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 571px;
 }
 
 .masthead_heading {
