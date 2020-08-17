@@ -14,6 +14,11 @@ body {
 ul {
     @include nav-ul;
 }
+
+span {
+    @include text-indent;
+}
+
 .container {
     padding: 1px;
     margin-inline-start: 15px;
@@ -35,5 +40,21 @@ ul {
     line-height: 18px;
     text-align: center;
     letter-spacing: 2px;
+}
+
+.subscribe {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: $background-colour;
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 2.94008px;
+    padding-block-start: 11px;
+    padding-block-end: 15px;
+    border: none;
 }
 

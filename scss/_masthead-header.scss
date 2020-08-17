@@ -1,10 +1,10 @@
 @import "variables";
 
 .masthead {
-    background-image: image('image-sm.png');
+    background-image: image('masthead-image.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 30% 50%;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,19 +22,6 @@
     line-height: 18px;
     letter-spacing: 2px;
     color: $base-colour;
-}
-
-.masthead_button {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
-    color: $background-colour;
-    padding: 1rem;
-    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
-    border-radius: 2.94008px;
-    border: none;
 }
 
 .story {
