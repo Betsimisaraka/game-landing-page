@@ -113,10 +113,10 @@ select {
   display: none; }
 
 .masthead {
-  background-image: url("../img/masthead-image.png");
+  background-image: url("../img/image-sm.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 40% 40%;
+  background-position: 30% 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
