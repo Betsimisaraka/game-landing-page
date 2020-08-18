@@ -241,7 +241,27 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   border: 1.19824px solid #FFFFFF; }
 
 .royal_game {
-  background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%); }
+  background-image: url("../img/image-2-sm.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-block-start: 48.91px;
+  padding-block-end: 361.46px; }
+
+.royal_game__heading {
+  text-align: start;
+  border-block-end: 2.34486px solid #ffffff;
+  padding-block-end: 40px; }
+
+.royal_game__header {
+  padding-block-start: 5.52px; }
+
+.royal_game p {
+  text-align: start;
+  padding-inline-start: 36.48px;
+  padding-inline-end: 14.92px;
+  padding-block-start: 26.72px;
+  margin: 0; }
 
 .requirement {
   background: radial-gradient(21.54% 18.14% at 50.49% 75.05%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080A0B 100%); }
