@@ -2,13 +2,13 @@
 
 html {
     font-family: $font_stack;
+    font-size: $base_font_size;
 }
 
 body {
     text-align: center;
     margin: 0;
-    color: #FFFFFF;
-    // background-color: #1A1917;
+    color: $base-colour;
 }
 
 ul {
@@ -27,29 +27,29 @@ span {
 .article_heading {
     font-family: 'Bebas Neue';
     font-weight: 400;
-    font-size: 33px;
-    line-height: 33px;
-    text-align: center;
+    font-size: $heading_font_size;
+    line-height: $heading_font_size;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 .article_questions {
     font-family: 'Bebas Neue';
-    font-size: 18px;
-    line-height: 18px;
-    text-align: center;
+    font-size: $question_font_size;
+    line-height: $question_font_size;
     letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
 }
 
 .subscribe {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: calc(#{$base_font_size} - 2px);
     line-height: 19px;
     color: $background-colour;
-    text-align: center;
     padding: 1rem;
     background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
     border-radius: 2.94008px;
