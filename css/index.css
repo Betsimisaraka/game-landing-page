@@ -129,7 +129,7 @@ select {
   display: none; }
 
 .masthead {
-  background-image: url("../img/masthead-image.png");
+  background-image: url("../img/image-sc-sm.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -179,28 +179,33 @@ select {
 .footer {
   background-color: black;
   padding-block-start: 29px;
-  padding-block-end: 40px;
-  text-align: center; }
+  padding-block-end: 40px; }
 
 .footer_heading {
   background-image: url("../img/logo.png");
   background-repeat: no-repeat;
   background-size: 50px 50px;
   background-position: center;
-  height: 50px; }
+  height: 50px;
+  margin: 0; }
 
 .footer_navigation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  padding-block-start: 42px;
+  padding-block-end: 28px;
+  border-block-end: 0.87397px solid rgba(255, 255, 255, 0.5); }
+  .footer_navigation ul + ul {
+    margin-block-start: 42px; }
 
 .list_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  height: 100px; }
 
 .footer_link {
   text-decoration: none;
@@ -216,6 +221,37 @@ select {
 .more {
   line-height: 16px; }
 
+.social__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.social__container .social_link {
+  display: block;
+  text-indent: -9999px; }
+
+.social__container .social_link {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  width: 50px;
+  min-height: 58px; }
+
+.social__container li:nth-child(1) .social_link {
+  background-image: url("../img/facebook.svg"); }
+
+.social__container li:nth-child(2) .social_link {
+  background-image: url("../img/twitter.svg"); }
+
+.social__container li:nth-child(3) .social_link {
+  background-image: url("../img/vector.svg"); }
+
+.social__container li:nth-child(4) .social_link {
+  background-image: url("../img/group.svg"); }
+
 .copyright {
   font-family: 'Open Sans';
   font-style: normal;
@@ -229,8 +265,3 @@ select {
 
 .privicy {
   line-height: 34px; }
-
-hr {
-  opacity: 0.5;
-  border: 0.873968px solid #FFFFFF;
-  transform: rotate(0deg); }
