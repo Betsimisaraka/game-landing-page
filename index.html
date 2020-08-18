@@ -9,13 +9,17 @@
 </head>
 
 <body>
+    <input class="menu__input" type="checkbox" id="checkbox_menu">
+    <label for="checkbox_menu" class="menu__label">
+        <span class="menu"> Menu</span>
+    </label>
     <header class="site_header">
         <div class="container container1">
             <h1 class="site_header__heading">
                 <a href="/logo"><span class="logo_span">Logo</span> </a>
             </h1>
             <nav class="navigation">
-                <ul>
+                <ul class="navigation_container">
                     <li><a href="/main">Main</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/game-features">Game features</a></li>
@@ -32,10 +36,6 @@
                     <option lang="de" value="de">Deu</option>
                 </select>
             </form>
-            <input type="checkbox" id="menu_checkbox">
-            <label for="menu_checkbox" class="icon_menu">
-                <span class="a11y">Open the menu</span>
-            </label>
         </div>
     </header>
     <main>
@@ -47,12 +47,21 @@
                 <p class="masthead_description article_questions">
                     Experience new social battle royale game
                 </p>
-                <button class="subscribe">
+                <button class="subscribe masthead_button">
                     Buy now on steam | $14.99
                 </button>
-                <p class="story">
-                    The story
-                </p>
+                <div class="history">
+                    <p class="story">
+                        The story
+                    </p>
+                    <div class="button">
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
             </div>
         </header>
         <article class="royal_game">
