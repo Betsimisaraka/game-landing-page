@@ -7,7 +7,6 @@
     background-repeat: no-repeat;
     background-position: center;
     padding-block-start: 48.91px;
-    padding-block-end: 361.46px;
 }
 
 .royal_game__heading {
@@ -20,10 +19,39 @@
     padding-block-start: 5.52px;
 }
 
-.royal_game p {
+.royal_game .royal_game__description {
     text-align: start;
     padding-inline-start: 36.48px;
     padding-inline-end: 14.92px;
     padding-block-start: 26.72px;
     margin: 0;
 }
+
+.picture {
+    text-align: start;
+    position: relative;
+    padding-block-start: 113%;
+    width: 100%;
+    list-style: none;
+  }
+  
+  .royal_game__image1 {
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    z-index: 3;
+    width: calc(225px);
+    height: 225px;
+  }
+  .royal_game__image2 {
+    position: absolute;
+    z-index: 2;
+    left: 22%;
+    top: 17%;
+  }
+  .royal_game__image3 {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 25%;
+  }
