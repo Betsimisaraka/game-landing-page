@@ -2,10 +2,12 @@
 @import "variables";
 
 .royal_game {
-    background-image: image('image-2-sm.png');
-    background-size: cover;
+    background-image: image('image-2-sm.png'),
+                      image('image-1.svg'),
+                      image('image-2.svg');
+    background-size: cover, 20px 20px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center, top center;
     padding-block-start: 48.91px;
 }
 
@@ -27,31 +29,53 @@
     margin: 0;
 }
 
+.royal_game p:nth-child(2) {
+  padding-block-end: 0;
+}
+
 .picture {
     text-align: start;
     position: relative;
-    padding-block-start: 113%;
-    width: 100%;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-block-end: calc(100% * 273 / 249);
+  }
+
+  .picture img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .picture li {
+    position: absolute;
+    top: 5%;
+    transform-origin: 100% 0%;
   }
   
   .royal_game__image1 {
-    position: absolute;
-    top: 15%;
-    left: 11%;
+    left: 0;
+    top: 0;
     z-index: 3;
-    width: calc(225px);
-    height: 225px;
+    right: calc(100% * 24 / 249);
+    transform: scale(0.9);
+    padding-block-start: 0;
   }
   .royal_game__image2 {
-    position: absolute;
     z-index: 2;
-    left: 22%;
-    top: 17%;
+    padding-block-end: calc(100% * 12 / 249);
+    left: calc(100% * 12 / 249);
+    right:  calc(100% * 12 / 249);
+    padding-block-start: calc(100% * 12 / 249);
+    transform: scale(0.8);
   }
   .royal_game__image3 {
-    position: absolute;
     z-index: 1;
-    top: 20%;
-    left: 25%;
+    padding-block-start: calc(100% * 24 / 249);
+    padding-left: calc(100% * 24 / 249);
+    right: 0;
+    transform: scale(0.8);
   }

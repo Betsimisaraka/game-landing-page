@@ -71,12 +71,30 @@ span {
   border: none; }
 
 .features {
-  background-image: url("../img/bg-image-3-sm.png");
+  background-image: url("../img/bg-image-3-sm-mob.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-inline-start: 116.19px; }
+
+.features_heading {
+  padding-bottom: 40px; }
+
+.feature_container {
+  text-align: start;
+  background-color: rgba(0, 0, 0, 0.7);
   padding-block-start: 82.04px;
   padding-block-end: 85.81px; }
+
+ul > li + li {
+  padding-top: 43px; }
+
+.feature_summary {
+  font-family: 'Bebas Neue';
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  color: #FFB548; }
 
 .site_header {
   position: absolute;
@@ -246,10 +264,10 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   border: 1.19824px solid #FFFFFF; }
 
 .royal_game {
-  background-image: url("../img/image-2-sm.png");
-  background-size: cover;
+  background-image: url("../img/image-2-sm.png"), url("../img/image-1.svg"), url("../img/image-2.svg");
+  background-size: cover, 20px 20px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center, top center;
   padding-block-start: 48.91px; }
 
 .royal_game__heading {
@@ -267,32 +285,51 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   padding-block-start: 26.72px;
   margin: 0; }
 
+.royal_game p:nth-child(2) {
+  padding-block-end: 0; }
+
 .picture {
   text-align: start;
   position: relative;
-  padding-block-start: 113%;
-  width: 100%;
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-block-end: calc(100% * 273 / 249); }
+
+.picture img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%; }
+
+.picture li {
+  position: absolute;
+  top: 5%;
+  transform-origin: 100% 0%; }
 
 .royal_game__image1 {
-  position: absolute;
-  top: 15%;
-  left: 11%;
+  left: 0;
+  top: 0;
   z-index: 3;
-  width: calc(225px);
-  height: 225px; }
+  right: calc(100% * 24 / 249);
+  transform: scale(0.9);
+  padding-block-start: 0; }
 
 .royal_game__image2 {
-  position: absolute;
   z-index: 2;
-  left: 22%;
-  top: 17%; }
+  padding-block-end: calc(100% * 12 / 249);
+  left: calc(100% * 12 / 249);
+  right: calc(100% * 12 / 249);
+  padding-block-start: calc(100% * 12 / 249);
+  transform: scale(0.8); }
 
 .royal_game__image3 {
-  position: absolute;
   z-index: 1;
-  top: 20%;
-  left: 25%; }
+  padding-block-start: calc(100% * 24 / 249);
+  padding-left: calc(100% * 24 / 249);
+  right: 0;
+  transform: scale(0.8); }
 
 .requirement {
   background-image: url("../img/bg-image-4-sm.png");
