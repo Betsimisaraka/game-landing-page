@@ -28,7 +28,7 @@
                 </ul>
             </nav>
             <form action="." method="GET">
-                <label for="lang_dropdown">Language</label>
+                <label class="language" for="lang_dropdown">Language</label>
                 <select name="lang" id="lang_dropdown">
                     <option lang="en" value="en">Eng</option>
                     <option lang="ru" value="ru">Pyc</option>
@@ -79,7 +79,7 @@
                     difference between life and death.
                 </p>
                 <ul class="picture">
-                    <li  class="royal_game__image1" >
+                    <li class="royal_game__image1">
                         <a href=""><img src="./img/screenshot1-des.png" alt=""></a>
                     </li>
                     <li class="royal_game__image2">
@@ -201,7 +201,8 @@
             </div>
         </article>
         <article class="newsletter">
-            <div class="container">
+            <img src="./img/newsletter-sm.png" alt="">
+            <div class="container newsletter__container">
                 <header>
                     <h3 class="article_heading">
                         Newsletter subscribe
@@ -216,10 +217,11 @@
                     will be taken care of by us. We will send you emails containing information about game. We don’t
                     spam.
                 </p>
-                <label for="email">Your email address
-                    <input type="email" id="email">
-                </label>
-                <button type="submit" class="subscribe">
+                <fieldset>
+                    <label class="email" for="email">Your email address </label>
+                    <input type="email" id="email" placeholder="your">
+                </fieldset>
+                <button type="submit" class="subscribe newsletter__subscribe">
                     Subscribe now
                 </button>
             </div>
