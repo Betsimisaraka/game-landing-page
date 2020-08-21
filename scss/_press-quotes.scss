@@ -1,3 +1,114 @@
+@import "variables";
+
 .press_quotes {
-    background: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%);
+    background: black;
+    padding-block-end: 36.99px;
+    padding-block-start: 46.98px;
+}
+
+.press_quotes .quotes_heading,
+.quotes_description {
+    text-align: start;
+}
+
+.quotes_description {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding-block-end: 24.09px;
+    padding-block-start: 24px;
+}
+
+.quotes_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    text-align: start;
+}
+
+.quotes_container li {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 16px;
+    margin-block-start: 20.39px;
+}
+
+.quotes_container .name {
+    font-family: 'Bebas Neue';
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    color: $list-head-colour;
+    margin: 0;
+
+}
+
+.quotes_container .job {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin-block-start: 0;
+    opacity: 0.5
+}
+
+.quotes_container .quote {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: start;
+}
+
+.quotes_container .date {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0.5;
+}
+
+.quotes_container .quotes {
+    padding-inline-start: 79px;
+    padding-inline-end: 50px;
+}
+
+.quotes_container .quotes_evan::before {
+    content: url(../img/evan-lahti.png);
+    position: absolute;
+    left: 10%;
+}
+
+.quotes_jada::before {
+    content: url(../img/jada-griffin.png);
+    position: absolute;
+    left: 10%;
+}
+
+.quotes_aaron::before {
+    content: url(../img/aaron-williams.png);
+    position: absolute;
+    left: 10%;
+}
+
+.quotes_evan::after,
+.quotes_jada::after,
+.quotes_aaron::after {
+    content: url(../img/twitter.svg);
+    position: absolute;
+    left: 88%;
+    margin-block-start: -3.5rem;
+    opacity: 0.3;
+}
+
+.quotes_container .quotes_evan {
+    width: 200px;
+    height: 60px;
 }

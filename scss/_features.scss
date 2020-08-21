@@ -1,10 +1,23 @@
 @import "variables";
 .features {
-    background-image: image('bg-image-3-sm-mob.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-inline-start: 116.19px;
+    // background-image: image('bg-image-3-sm-mob.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    //padding-inline-start: 116.19px;
+    background-color: black;
+}
+
+.features figure {
+    margin: 0;
+}
+
+.features > img {
+    max-width: 100%;
+}
+
+.features aside {
+  width: 400px;
 }
 
 .features_heading {
@@ -13,12 +26,11 @@
 
 .feature_container {
     text-align: start;
-    background-color: rgba(0, 0, 0, 0.7);
     padding-block-start: 82.04px;
     padding-block-end: 85.81px;
 }
 
-ul > li + li {
+.details_container > li + li {
     padding-top: 43px;
 }
 

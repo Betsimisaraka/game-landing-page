@@ -1,20 +1,16 @@
 .newsletter {
     background-color: black;
-//     background-image: image("newsletter.png");
-//     background-position: left;
-//     background-repeat: no-repeat;
-//     background-size: cover;
+    padding-block-start: 64.07px;
+    padding-block-end: 61.37px;
 }
 
 .newsletter img {
     float: left;
-    width: 150px;
-    height: 320px;
+    width: 162px;
+    height: 316px;
 }
 
 .newsletter__container {
-    padding-block-start: 64.07px;
-    padding-block-end: 61.37px;
     text-align: start;
 }
 
@@ -31,17 +27,17 @@ fieldset {
 }
 
 .email {
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    display: block;
-    text-indent: none;
-    color: #FFFFFF;
-
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFB548;
 }
 
 .newsletter__subscribe {
     width: 100%;
+}
+.newsletter_discription {
+    padding-block-end: 48px;
 }

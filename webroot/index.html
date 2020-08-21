@@ -99,7 +99,7 @@
                         Features
                     </h3>
                 </header>
-                <ul>
+                <ul class="details_container">
                     <li>
                         <details class="details1">
                             <summary class="feature_summary">Survive at all costs</summary>
@@ -128,6 +128,11 @@
                         </details>
                     </li>
                 </ul>
+                <aside>
+                    <figure>
+                        <img src="./img/bg-image-3-sml.png" alt="">
+                    </figure>
+                </aside>
             </div>
         </article>
         <article class="requirement">
@@ -164,7 +169,7 @@
         </article>
         <article class="press_quotes">
             <div class="container">
-                <header>
+                <header class="quotes_heading">
                     <h3 class="article_heading">
                         Express quotes
                     </h3>
@@ -172,7 +177,7 @@
                         What people think?
                     </p>
                 </header>
-                <p>
+                <p class="quotes_description">
                     Our goal is to create a product and service that you’re satisfied with and use it every day. This is
                     why we’re constantly working on our services to make it better every day and really listen to what
                     our users has to say.
@@ -180,22 +185,28 @@
                 <button class="subscribe">Read more testemonials</button>
                 <ul class="quotes_container">
                     <li>
-                        <p>Evan Lahti</p>
-                        <p>PC Gamer</p>
-                        <p>“One of my gaming highlights of the year.”</p>
-                        <small>October 18, 2018</small>
+                        <header class="quotes quotes_evan">
+                            <h4 class="name">Evan Lahti</h4>
+                            <p class="job">PC Gamer</p>
+                        </header>
+                        <p class="quote">“One of my gaming highlights of the year.”</p>
+                        <small class="date">October 18, 2018</small>
                     </li>
                     <li>
-                        <p>Jada Griffin</p>
-                        <p>Nerdreactor</p>
-                        <p>“The next big thing in the world of streaming and survival games.”</p>
-                        <small>December 21, 2018</small>
+                        <header class="quotes quotes_jada">
+                            <h4 class="name">Jada Griffin</h4>
+                            <p class="job">Nerdreactor</p>
+                        </header>
+                        <p class="quote">“The next big thing in the world of streaming and survival games.”</p>
+                        <small class="date">December 21, 2018</small>
                     </li>
                     <li>
-                        <p>Aaron Williams</p>
-                        <p>Uproxx</p>
-                        <p>“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</p>
-                        <small>December 24, 2018</small>
+                        <header class="quotes quotes_aaron">
+                            <h4 class="name">Aaron Williams</h4>
+                            <p class="job">Uproxx</p>
+                        </header>
+                        <p class="quote">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</p>
+                        <small class="date">December 24, 2018</small>
                     </li>
                 </ul>
             </div>
@@ -211,15 +222,15 @@
                         Want to stay in touch?
                     </p>
                 </header>
-                <p>
+                <p class="newsletter_discription">
                     In order to start receiving our news, all you have to do is enter your email address. Everything
                     else
                     will be taken care of by us. We will send you emails containing information about game. We don’t
                     spam.
                 </p>
                 <fieldset>
-                    <label class="email" for="email">Your email address </label>
-                    <input type="email" id="email" placeholder="your">
+                    <input type="email" id="email" placeholder="Your email address">
+                    <label class="email" for="email">aliciliniavopir@gmail.com</label>
                 </fieldset>
                 <button type="submit" class="subscribe newsletter__subscribe">
                     Subscribe now
