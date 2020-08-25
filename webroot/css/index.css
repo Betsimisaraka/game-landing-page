@@ -71,24 +71,30 @@ span {
   border: none; }
 
 .features {
-  background-color: black; }
+  background-color: black;
+  padding-block-start: 82.04px;
+  padding-block-end: 85.81px; }
 
 .features figure {
-  margin: 0; }
+  float: left;
+  clear: left;
+  width: 215px;
+  height: 378px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: -6rem; }
 
-.features > img {
-  max-width: 100%; }
-
-.features aside {
-  width: 400px; }
+.features img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%; }
 
 .features_heading {
   padding-bottom: 40px; }
 
 .feature_container {
-  text-align: start;
-  padding-block-start: 82.04px;
-  padding-block-end: 85.81px; }
+  text-align: start; }
 
 .details_container > li + li {
   padding-top: 43px; }
@@ -99,6 +105,21 @@ span {
   line-height: 21px;
   letter-spacing: 2px;
   color: #FFB548; }
+
+.details1::before {
+  content: url(../img/image-1.svg);
+  position: absolute;
+  left: 28%; }
+
+.details2::before {
+  content: url(../img/image-2.svg);
+  position: absolute;
+  left: 28%; }
+
+.details3::before {
+  content: url(../img/image-2.svg);
+  position: absolute;
+  left: 28%; }
 
 .site_header {
   position: absolute;
