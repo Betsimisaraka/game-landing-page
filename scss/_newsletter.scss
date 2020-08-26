@@ -1,17 +1,21 @@
 .newsletter {
+    background-image: radial-gradient(38.45% 38.77% at 19.45% 42.62%, rgba(255, 255, 255, 0) 57%, rgba(0, 0, 0, 0) 37%, rgba(4, 5, 6, 0.520671) 82.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%),  
+                        //linear-gradient(90deg,  black 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0 , 0, 1) 60%, #000 100%),
+                        image('newsletter-sm.png');                   
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, auto 100%;
+    background-position: 0 0, 0% 50%;
     background-color: black;
     padding-block-start: 64.07px;
     padding-block-end: 61.37px;
 }
 
-.newsletter img {
-    float: left;
-    width: 162px;
-    height: 316px;
-}
-
 .newsletter__container {
     text-align: start;
+}
+
+.newsletter header, .newsletter_discription {
+    padding-inline-start: 145px;
 }
 
 input[type="email"] {

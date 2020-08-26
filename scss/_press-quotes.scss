@@ -2,8 +2,8 @@
 
 .press_quotes {
     background: black;
-    padding-block-end: 36.99px;
-    padding-block-start: 46.98px;
+    padding-block-start: 36.99px;
+    padding-block-end: 46.98px;
 }
 
 .press_quotes .quotes_heading,
@@ -24,10 +24,10 @@
 .quotes_container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;
+    // position: relative;
     text-align: start;
+    // width: 100vw;
+    // height: 100vh;
 }
 
 .quotes_container li {
@@ -77,25 +77,28 @@
 
 .quotes_container .quotes {
     padding-inline-start: 79px;
-    padding-inline-end: 50px;
+    // padding-inline-end: 50px;
 }
 
 .quotes_container .quotes_evan::before {
     content: url(../img/evan-lahti.png);
     position: absolute;
-    left: 10%;
+    left: 5%;
+    padding-inline-start: 16px;
 }
 
 .quotes_jada::before {
     content: url(../img/jada-griffin.png);
     position: absolute;
-    left: 10%;
+    left: 5%;
+    padding-inline-start: 16px;
 }
 
 .quotes_aaron::before {
     content: url(../img/aaron-williams.png);
     position: absolute;
-    left: 10%;
+    left: 5%;
+    padding-inline-start: 16px;
 }
 
 .quotes_evan::after,
@@ -108,7 +111,7 @@
     opacity: 0.3;
 }
 
-.quotes_container .quotes_evan {
-    width: 200px;
-    height: 60px;
-}
+// .quotes_container .quotes_evan {
+//     width: 200px;
+//     height: 60px;
+// }
