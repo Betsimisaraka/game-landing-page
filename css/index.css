@@ -71,24 +71,13 @@ span {
   border: none; }
 
 .features {
-  background-color: black;
+  background-image: radial-gradient(38.45% 38.77% at 35.45% 44.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url("../img/bg-image-3-sm-mob.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, auto 100%;
+  background-position: 0 0, 0% 50%;
+  padding-inline-start: 145px;
   padding-block-start: 82.04px;
   padding-block-end: 85.81px; }
-
-.features figure {
-  float: left;
-  clear: left;
-  width: 215px;
-  height: 378px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: -6rem; }
-
-.features img {
-  max-width: 100%;
-  width: 100%;
-  height: 100%; }
 
 .features_heading {
   padding-bottom: 40px; }
@@ -406,8 +395,8 @@ body > input[type="checkbox"]:checked ~ .menu__label {
 
 .press_quotes {
   background: black;
-  padding-block-end: 36.99px;
-  padding-block-start: 46.98px; }
+  padding-block-start: 36.99px;
+  padding-block-end: 46.98px; }
 
 .press_quotes .quotes_heading,
 .quotes_description {
@@ -425,9 +414,6 @@ body > input[type="checkbox"]:checked ~ .menu__label {
 .quotes_container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  position: relative;
   text-align: start; }
 
 .quotes_container li {
@@ -470,23 +456,25 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   opacity: 0.5; }
 
 .quotes_container .quotes {
-  padding-inline-start: 79px;
-  padding-inline-end: 50px; }
+  padding-inline-start: 79px; }
 
 .quotes_container .quotes_evan::before {
   content: url(../img/evan-lahti.png);
   position: absolute;
-  left: 10%; }
+  left: 5%;
+  padding-inline-start: 16px; }
 
 .quotes_jada::before {
   content: url(../img/jada-griffin.png);
   position: absolute;
-  left: 10%; }
+  left: 5%;
+  padding-inline-start: 16px; }
 
 .quotes_aaron::before {
   content: url(../img/aaron-williams.png);
   position: absolute;
-  left: 10%; }
+  left: 5%;
+  padding-inline-start: 16px; }
 
 .quotes_evan::after,
 .quotes_jada::after,
@@ -497,22 +485,20 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   margin-block-start: -3.5rem;
   opacity: 0.3; }
 
-.quotes_container .quotes_evan {
-  width: 200px;
-  height: 60px; }
-
 .newsletter {
+  background-image: radial-gradient(38.45% 38.77% at 19.45% 42.62%, rgba(255, 255, 255, 0) 57%, rgba(0, 0, 0, 0) 37%, rgba(4, 5, 6, 0.520671) 82.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url("../img/newsletter-sm.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, auto 100%;
+  background-position: 0 0, 0% 50%;
   background-color: black;
   padding-block-start: 64.07px;
   padding-block-end: 61.37px; }
 
-.newsletter img {
-  float: left;
-  width: 162px;
-  height: 316px; }
-
 .newsletter__container {
   text-align: start; }
+
+.newsletter header, .newsletter_discription {
+  padding-inline-start: 145px; }
 
 input[type="email"] {
   background-color: transparent;
