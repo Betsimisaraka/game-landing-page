@@ -46,34 +46,14 @@
     padding-block-end: 49.39px;
 }
 
-.history button:nth-child(1),
-.history button:nth-child(2),
-.history button:nth-child(3),
-.history button:nth-child(4) {
+.history .button {
+    background-image:   image('image-1.svg'),
+                        image('image-2.svg'),
+                        image('image-2.svg'),
+                        image('image-2.svg'),
+                        image('switch-img.png');
     background-repeat: no-repeat;
-    background-size: 10.4px 10.4px;
-    background-position: center;
-    height: 10.4px;
-    border: 0.97049px solid #FFFFFF;
-    border-radius: 50%;
-}
-
-.history button:nth-child(1) {
-    background-image: image('image-1.svg');
-    background: #FFFFFF;
-}
-
-.history button:nth-child(2),
-.history button:nth-child(3),
-.history button:nth-child(4) {
-    background-image: image('image-2.svg');
-    background: none;
-}
-
-.history button:nth-child(5) {
-    background-image: image('switch.svg');
-    width: 41.63px;
-    height: 6.8px;
-    background: #FFFFFF;
-    border: 1.19824px solid #FFFFFF;
+    background-position: 0% 0%, 17% 10%, 35% 0%, 55% 0%, 100% 0%;
+    width: 132.95px;
+    height: 11px;
 }
