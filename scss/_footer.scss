@@ -55,11 +55,8 @@
     
 }
 
-.social__container .social_link{
-    @include text-indent;
-}
-
 .social__container .social_link {
+    @include text-indent;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;

@@ -2,3 +2,6 @@
 @function image($filename) {
     @return url("../img/#{$filename}");
   }
+
+  $faux_column_width: 1200px;
+  $desktop_min_width: $faux_column_width + 100px;

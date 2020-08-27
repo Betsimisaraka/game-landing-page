@@ -58,3 +58,9 @@ span {
     border: none;
 }
 
+@media (min-width: $desktop_min_width) {
+    .container {
+        @include containers;
+    }
+}
+

@@ -57,3 +57,20 @@
     width: 132.95px;
     height: 11px;
 }
+
+@media (min-width: $desktop_min_width) {
+    .masthead {
+        background-image: image("bg-image.png");
+        padding-block-start: 500px;
+    }
+
+    .history .button {
+        display: none;
+    }
+
+    .history {
+        display: block;
+        padding-block-start: 143px;
+        padding-block-end: 54px;
+    }
+}

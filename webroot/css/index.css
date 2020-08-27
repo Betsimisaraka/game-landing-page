@@ -78,6 +78,13 @@ span {
   padding-block-end: 15px;
   border: none; }
 
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1200px;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto; } }
+
 .language {
   display: block;
   text-indent: -9999px; }
@@ -133,28 +140,31 @@ span {
   left: 0;
   right: 0; }
 
-#lang_dropdown {
-  position: absolute;
-  top: 50%;
-  left: 50%; }
-
 .container1 {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
 
 body > header .site_header__heading {
+  position: absolute;
   margin-block-end: 0;
-  top: 30%;
-  left: 0%;
+  top: 10%;
+  left: 5%;
   background-image: url("../img/logo.png");
   background-repeat: no-repeat;
   background-size: 32px 32px;
   width: 33px; }
 
+.form {
+  position: absolute;
+  top: 0%;
+  left: 50%; }
+
 body > .menu__label {
   position: absolute;
   left: 90%;
-  top: 6%;
+  top: 4%;
   background-image: url("../img/menu-icon.svg");
   background-repeat: no-repeat;
   width: 34px; }
@@ -163,8 +173,8 @@ input[type="checkbox"] {
   opacity: 0;
   position: absolute;
   z-index: 1;
-  left: 92%;
-  top: 6%; }
+  left: 90%;
+  top: 4%; }
 
 #lang_dropdown {
   font-family: 'Open Sans';
@@ -181,7 +191,7 @@ input[type="checkbox"] {
   top: 0;
   bottom: 0;
   left: 0;
-  transform: translateX(-110%);
+  transform: translateX(-150%);
   transition: transform .2s;
   box-shadow: 50px 10px 50px rgba(124, 107, 107, 0.25);
   z-index: 1;
@@ -205,14 +215,10 @@ input[type="checkbox"] {
   color: #1A1917; }
 
 .navigation_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start; }
+  display: block; }
 
-/*Create alternative state: open /checked */
 input[type="checkbox"]:checked ~ header .navigation {
-  transform: translateX(0); }
+  transform: translateX(-10%); }
 
 body > input[type="checkbox"]:checked ~ .menu__label {
   position: absolute;
@@ -222,6 +228,63 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   left: -10%;
   height: 100%;
   width: 100%; }
+
+.icons {
+  display: none; }
+
+@media (min-width: 1300px) {
+  .site_header {
+    top: 10%; }
+  body > .menu__label {
+    display: none; }
+  body > header .site_header__heading {
+    position: absolute;
+    top: 0%;
+    left: 5.5%;
+    margin-block-start: 0%; }
+  .navigation {
+    background-color: transparent;
+    padding: 0;
+    top: 0;
+    left: auto;
+    right: 30%;
+    bottom: auto;
+    width: 50%;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    height: auto; }
+  .navigation_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+  .form {
+    display: flex;
+    position: relative;
+    top: 0%;
+    left: 86%; }
+  .icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    border-left: 0.87397px solid rgba(255, 255, 255, 0.5); }
+    .icons li {
+      margin-inline-start: 16px; }
+  .icons a {
+    display: block;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 31px;
+    min-height: 30px; }
+  .icons li:nth-child(1) a {
+    background-image: url("../img/xbox-icon.svg"); }
+  .icons li:nth-child(2) a {
+    background-image: url("../img/steam-icon.svg"); } }
 
 .language {
   display: block;
@@ -274,6 +337,17 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   background-position: 0% 0%, 17% 10%, 35% 0%, 55% 0%, 100% 0%;
   width: 132.95px;
   height: 11px; }
+
+@media (min-width: 1300px) {
+  .masthead {
+    background-image: url("../img/bg-image.png");
+    padding-block-start: 500px; }
+  .history .button {
+    display: none; }
+  .history {
+    display: block;
+    padding-block-start: 143px;
+    padding-block-end: 54px; } }
 
 .language {
   display: block;
@@ -593,9 +667,7 @@ fieldset {
 
 .social__container .social_link {
   display: block;
-  text-indent: -9999px; }
-
-.social__container .social_link {
+  text-indent: -9999px;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
