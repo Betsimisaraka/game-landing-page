@@ -1,3 +1,7 @@
+.language {
+  display: block;
+  text-indent: -9999px; }
+
 @font-face {
   font-family: "Bebas Neue";
   src: local("Bebas Neue Bold"), local("Bebas-Neue-Bold"), url("../fonts/babasneue-bold.woff2") format(woff2), url("../fonts/babasneue-bold.woff") format(woff);
@@ -15,6 +19,10 @@
   src: local("Open Sans Regular"), local("Open-Sans-Regular"), url("../fonts/opensans-regular.woff2") format(woff2), url("../fonts/opensans-regular.woff") format(woff);
   font-style: "normal";
   font-weight: 400; }
+
+.language {
+  display: block;
+  text-indent: -9999px; }
 
 html {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -70,6 +78,10 @@ span {
   padding-block-end: 15px;
   border: none; }
 
+.language {
+  display: block;
+  text-indent: -9999px; }
+
 .features {
   background-image: radial-gradient(38.45% 38.77% at 35.45% 44.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url("../img/bg-image-3-sm-mob.png");
   background-repeat: no-repeat, no-repeat;
@@ -110,16 +122,16 @@ span {
   position: absolute;
   left: 28%; }
 
+.language {
+  display: block;
+  text-indent: -9999px; }
+
 .site_header {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   right: 0; }
-
-.language {
-  display: block;
-  text-indent: -9999px; }
 
 #lang_dropdown {
   position: absolute;
@@ -171,9 +183,9 @@ input[type="checkbox"] {
   left: 0;
   transform: translateX(-110%);
   transition: transform .2s;
-  box-shadow: 0px 0px 50px rgba(124, 107, 107, 0.25);
+  box-shadow: 50px 10px 50px rgba(124, 107, 107, 0.25);
   z-index: 1;
-  background-color: #041111;
+  background-color: #b0c0c0;
   padding-inline-start: 2rem;
   padding-block-start: 1rem;
   height: 100vh; }
@@ -189,6 +201,9 @@ input[type="checkbox"] {
   text-transform: uppercase;
   color: #FFFFFF; }
 
+.navigation_container a:hover {
+  color: #1A1917; }
+
 .navigation_container {
   display: flex;
   flex-direction: column;
@@ -197,7 +212,7 @@ input[type="checkbox"] {
 
 /*Create alternative state: open /checked */
 input[type="checkbox"]:checked ~ header .navigation {
-  transform: translateX(50%); }
+  transform: translateX(0); }
 
 body > input[type="checkbox"]:checked ~ .menu__label {
   position: absolute;
@@ -207,6 +222,10 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   left: -10%;
   height: 100%;
   width: 100%; }
+
+.language {
+  display: block;
+  text-indent: -9999px; }
 
 .masthead {
   background-image: url("../img/image-sc-sm.png");
@@ -249,33 +268,16 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   padding-block-start: 174.69px;
   padding-block-end: 49.39px; }
 
-.history button:nth-child(1),
-.history button:nth-child(2),
-.history button:nth-child(3),
-.history button:nth-child(4) {
+.history .button {
+  background-image: url("../img/image-1.svg"), url("../img/image-2.svg"), url("../img/image-2.svg"), url("../img/image-2.svg"), url("../img/switch-img.png");
   background-repeat: no-repeat;
-  background-size: 10.4px 10.4px;
-  background-position: center;
-  height: 10.4px;
-  border: 0.97049px solid #FFFFFF;
-  border-radius: 50%; }
+  background-position: 0% 0%, 17% 10%, 35% 0%, 55% 0%, 100% 0%;
+  width: 132.95px;
+  height: 11px; }
 
-.history button:nth-child(1) {
-  background-image: url("../img/image-1.svg");
-  background: #FFFFFF; }
-
-.history button:nth-child(2),
-.history button:nth-child(3),
-.history button:nth-child(4) {
-  background-image: url("../img/image-2.svg");
-  background: none; }
-
-.history button:nth-child(5) {
-  background-image: url("../img/switch.svg");
-  width: 41.63px;
-  height: 6.8px;
-  background: #FFFFFF;
-  border: 1.19824px solid #FFFFFF; }
+.language {
+  display: block;
+  text-indent: -9999px; }
 
 .royal_game {
   background-image: url("../img/image-2-sm.png"), url("../img/image-1.svg"), url("../img/image-2.svg");
@@ -345,6 +347,10 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   right: 0;
   transform: scale(0.8); }
 
+.language {
+  display: block;
+  text-indent: -9999px; }
+
 .requirement {
   background-image: url("../img/bg-image-4-sm.png");
   background-repeat: no-repeat;
@@ -392,6 +398,10 @@ body > input[type="checkbox"]:checked ~ .menu__label {
 
 .requirement_container li:nth-child(5) {
   grid-column: 1 / 5; }
+
+.language {
+  display: block;
+  text-indent: -9999px; }
 
 .press_quotes {
   background: black;
@@ -523,6 +533,10 @@ fieldset {
 
 .newsletter_discription {
   padding-block-end: 48px; }
+
+.language {
+  display: block;
+  text-indent: -9999px; }
 
 .footer {
   background-color: black;
