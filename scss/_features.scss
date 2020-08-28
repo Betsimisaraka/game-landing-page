@@ -32,20 +32,24 @@
     color: $list-head-colour;
 }
 
-.details1::before {
-    content: url(../img/image-1.svg);
-    position: absolute;
-    left: 28%;
+details {
+    position: relative;
 }
 
-.details2::before {
-    content: url(../img/image-2.svg);
-    position: absolute;
-    left: 28%;
+summary {
+    padding-inline-start: 1rem;
 }
-.details3::before {
-    content: url(../img/image-2.svg);
-    position: absolute;
-    left: 28%;
+
+summary::-webkit-details-marker {
+    visibility: hidden;
+}
+
+details[open] > summary::before {
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
 }
 
