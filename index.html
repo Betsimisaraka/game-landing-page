@@ -36,10 +36,10 @@
                     <option lang="de" value="de">Deu</option>
                 </select>
             </form>
-                <lu class="icons">
-                    <li><a href="/xbox-icon">xbox icon</a></li>
-                    <li><a href="/steam-icon">Steam icon</a></li>
-                </lu>
+            <lu class="icons">
+                <li><a href="/xbox-icon">xbox icon</a></li>
+                <li><a href="/steam-icon">Steam icon</a></li>
+            </lu>
         </div>
     </header>
     <main>
@@ -100,11 +100,11 @@
                 </header>
                 <ul class="details_container">
                     <li>
-                        <p class="details1">
+                        <details class="details1" open>
                             <summary class="feature_summary">Survive at all costs</summary>
-                            <p>You have 30 minutes to find a relic, signal for extraction, and grab
-                                one of three spots on the rescue chopper.</p>
-                        </p>
+                        <p>You have 30 minutes to find a relic, signal for extraction, and grab
+                            one of three spots on the rescue chopper.</p>
+                        </details>
                     </li>
                     <li>
                         <details class="details2">
@@ -233,30 +233,34 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <h4 class="footer_heading"><a href="/logo"><span>Logo</span></a></h4>
-            <nav class="footer_navigation">
-                <ul class="list_container">
-                    <li><a class="footer_link more" href="/main">Main</a></li>
-                    <li><a class="footer_link more" href="/about">About</a></li>
-                    <li><a class="footer_link more" href="/game-features">Game features</a></li>
-                    <li><a class="footer_link more" href="/system-requirements">System requirements</a></li>
-                    <li><a class="footer_link more" href="/quotes">Quotes</a></li>
+            <div class="footer_div">
+                <h4 class="footer_heading"><a href="/logo"><span>Logo</span></a></h4>
+                <nav class="footer_navigation">
+                    <ul class="list_container">
+                        <li><a class="footer_link more" href="/main">Main</a></li>
+                        <li><a class="footer_link more" href="/about">About</a></li>
+                        <li><a class="footer_link more" href="/game-features">Game features</a></li>
+                        <li><a class="footer_link more" href="/system-requirements">System requirements</a></li>
+                        <li><a class="footer_link more" href="/quotes">Quotes</a></li>
+                    </ul>
+                    <ul class="social__container">
+                        <li><a class="social_link" href="/facebook">Facebook</a></li>
+                        <li><a class="social_link" href="/twitter">Twitter</a></li>
+                        <li><a class="social_link" href="/videos">Videos</a></li>
+                        <li><a class="social_link" href="/switch">Switch</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="copyright_container">
+                <p class="copyright">
+                    © 2018 Outpost Games, Inc. All Rights Reserved
+                </p>
+                <ul class="footer_privicy">
+                    <li><a class="footer_link privicy" href="/privicy-policy">Privicy policy</a></li>
+                    <li><a class="footer_link privicy" href="/terms-of-services">| Terms of services |</a></li>
+                    <li><a class="footer_link privicy" href="/code-of-contuct">Code of conduct</a></li>
                 </ul>
-                <ul class="social__container">
-                    <li><a class="social_link" href="/facebook">Facebook</a></li>
-                    <li><a class="social_link" href="/twitter">Twitter</a></li>
-                    <li><a class="social_link" href="/videos">Videos</a></li>
-                    <li><a class="social_link" href="/switch">Switch</a></li>
-                </ul>
-            </nav>
-            <p class="copyright">
-                © 2018 Outpost Games, Inc. All Rights Reserved
-            </p>
-            <ul>
-                <li><a class="footer_link privicy" href="/privicy-policy">Privicy policy</a></li>
-                <li><a class="footer_link privicy" href="/terms-of-services">| Terms of services |</a></li>
-                <li><a class="footer_link privicy" href="/code-of-contuct">Code of conduct</a></li>
-            </ul>
+            </div>
         </div>
     </footer>
 

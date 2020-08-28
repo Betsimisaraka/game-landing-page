@@ -114,20 +114,22 @@ span {
   letter-spacing: 2px;
   color: #FFB548; }
 
-.details1::before {
-  content: url(../img/image-1.svg);
-  position: absolute;
-  left: 28%; }
+details {
+  position: relative; }
 
-.details2::before {
-  content: url(../img/image-2.svg);
-  position: absolute;
-  left: 28%; }
+summary {
+  padding-inline-start: 1rem; }
 
-.details3::before {
-  content: url(../img/image-2.svg);
-  position: absolute;
-  left: 28%; }
+summary::-webkit-details-marker {
+  visibility: hidden; }
+
+details[open] > summary::before {
+  content: "";
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #fff; }
 
 .language {
   display: block;
@@ -650,20 +652,17 @@ fieldset {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
+  line-height: 16px;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase; }
-
-.more {
-  line-height: 16px; }
 
 .social__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  width: 100%; }
+  flex-wrap: wrap; }
 
 .social__container .social_link {
   display: block;
@@ -671,8 +670,7 @@ fieldset {
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
-  width: 50px;
-  min-height: 58px; }
+  width: 50px; }
 
 .social__container li:nth-child(1) .social_link {
   background-image: url("../img/facebook.svg"); }
@@ -699,3 +697,50 @@ fieldset {
 
 .privicy {
   line-height: 34px; }
+
+@media (min-width: 1300px) {
+  .footer {
+    padding-block-start: 21px;
+    padding-block-end: 47px; }
+  .footer_heading {
+    width: 50px; }
+  .footer_div {
+    border-block-end: 0.87397px solid rgba(255, 255, 255, 0.5);
+    padding-block-end: 41px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .footer_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border-block-end: 0;
+    height: 0; }
+    .footer_navigation ul + ul {
+      margin-inline-start: 87px;
+      margin-block-start: 0; }
+  .list_container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    height: 0; }
+    .list_container li {
+      margin-inline-end: 23px; }
+  .social__container {
+    margin-block-start: 0;
+    align-self: center; }
+  .copyright_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-block-start: 22px; }
+  .copyright {
+    padding: 0;
+    margin: 0; }
+  .footer_privicy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
