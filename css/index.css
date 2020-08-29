@@ -115,7 +115,8 @@ span {
   color: #FFB548; }
 
 details {
-  position: relative; }
+  position: relative;
+  padding-inline-start: 2rem; }
 
 summary {
   padding-inline-start: 1rem; }
@@ -124,12 +125,37 @@ summary::-webkit-details-marker {
   visibility: hidden; }
 
 details[open] > summary::before {
+  position: relative;
   content: "";
   display: block;
   height: 1rem;
   width: 1rem;
+  top: 1rem;
   border-radius: 50%;
   background-color: #fff; }
+
+details > summary::before {
+  position: relative;
+  content: "";
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  top: 1rem;
+  left: -1rem;
+  border-radius: 50%;
+  background-color: #080A0B;
+  border: 1px solid #fff; }
+
+details::after {
+  content: '';
+  width: 0.25rem;
+  position: absolute;
+  top: 1rem;
+  left: 1.75rem;
+  bottom: 1rem;
+  background-color: #ccc;
+  margin-inline-start: -0.125rem;
+  z-index: 1; }
 
 .language {
   display: block;
@@ -286,7 +312,11 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   .icons li:nth-child(1) a {
     background-image: url("../img/xbox-icon.svg"); }
   .icons li:nth-child(2) a {
-    background-image: url("../img/steam-icon.svg"); } }
+    background-image: url("../img/steam-icon.svg"); }
+  option {
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 3px;
+    padding-block-start: 1rem; } }
 
 .language {
   display: block;
@@ -570,6 +600,10 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   left: 88%;
   margin-block-start: -3.5rem;
   opacity: 0.3; }
+
+.language {
+  display: block;
+  text-indent: -9999px; }
 
 .newsletter {
   background-image: radial-gradient(38.45% 38.77% at 19.45% 42.62%, rgba(255, 255, 255, 0) 57%, rgba(0, 0, 0, 0) 37%, rgba(4, 5, 6, 0.520671) 82.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url("../img/newsletter-sm.png");
