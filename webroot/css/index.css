@@ -629,8 +629,14 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   content: url(../img/twitter.svg);
   position: absolute;
   left: 88%;
-  margin-block-start: -3.5rem;
+  margin-block-start: -3rem;
   opacity: 0.3; }
+
+@media (min-width: 1300px) {
+  .press_quotes__container {
+    float: left;
+    text-align: start;
+    padding-inline-end: 726px; } }
 
 .language {
   display: block;
