@@ -62,5 +62,12 @@ span {
     .container {
         @include containers;
     }
+
+    .article_heading {
+        @include heading_des;
+    }
+    .article_questions {
+        @include question_des;
+    }
 }
 

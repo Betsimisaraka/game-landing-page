@@ -2,27 +2,24 @@
 .features {
     background-image: radial-gradient(38.45% 38.77% at 35.45% 44.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%),  
                     //linear-gradient(90deg,  black 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0 , 0, 1) 60%, #000 100%),
-                    image('bg-image-3-sm-mob.png');                   
+                    image('features-sm.png');                   
     background-repeat: no-repeat, no-repeat;
     background-size: cover, auto 100%;
     background-position: 0 0, 0% 50%;
-    padding-inline-start: 145px;
+    padding-inline-start: 170px;
     // background-color: black;
     padding-block-start: 82.04px;
     padding-block-end: 85.81px;
+    text-align: start;
 }
 
 .features_heading {
     padding-bottom: 40px;
 }
 
-.feature_container {
-    text-align: start;
-}
-
-.details_container > li + li {
-    padding-top: 43px;
-}
+// .feature_container {
+//     text-align: start;
+// }
 
 .feature_summary {
     font-family: 'Bebas Neue';
@@ -32,17 +29,16 @@
     color: $list-head-colour;
 }
 
-details {
-    position: relative;
-    padding-inline-start: 2rem;
+ul > li p {
+    margin: 0;
 }
 
-summary {
-    padding-inline-start: 1rem;
+details {
+    position: relative;
 }
 
 summary::-webkit-details-marker {
-    visibility: hidden;
+    display: none;
 }
 
 details[open] > summary::before {
@@ -53,7 +49,9 @@ details[open] > summary::before {
     width: 1rem;
     top: 1rem;
     border-radius: 50%;
+    margin-inline-start: -1rem;
     background-color: #fff;
+    z-index: 2;
 }
 
 details > summary::before {
@@ -67,16 +65,42 @@ details > summary::before {
     border-radius: 50%;
     background-color: #080A0B;
     border: 1px solid #fff;
+    margin-inline-start: -1rem;
+    z-index: 2;
 }
 
-details::after {
+details::before {
     content: '';
     width: 0.25rem;
+    height: 100%;
     position: absolute;
     top: 1rem;
-    left: 1.75rem;
+    left: -1.5rem;
     bottom: 1rem;
     background-color: #ccc;
-    margin-inline-start: -0.125rem;
     z-index: 1;
+}
+
+ul> li:last-child details::before {
+    top: -2rem;
+}
+
+@media (min-width: $desktop_min_width) {
+    .features{
+        background-image:   radial-gradient(45.1% 80.48% at 10.85% 29.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%),
+                            image('bg-image-3.png');
+        background-size: cover, auto 100%;
+        background-position: 0 0, 0% 70%;
+        background-repeat: no-repeat;
+        padding-inline-start: 777px;
+        padding-inline-end: 237px;
+    }
+
+    .feature_summary {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    
 }

@@ -59,3 +59,9 @@
 .requirement_container li:nth-child(5) {
     grid-column: 1 / 5;
 }
+
+@media (min-width: $desktop_min_width) {
+    .requirement {
+        background-image: image('bg-image-4.png');
+    }
+}

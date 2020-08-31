@@ -83,29 +83,36 @@ span {
     max-width: 1200px;
     max-height: 100%;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .article_heading {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px; }
+  .article_questions {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold; } }
 
 .language {
   display: block;
   text-indent: -9999px; }
 
 .features {
-  background-image: radial-gradient(38.45% 38.77% at 35.45% 44.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url("../img/bg-image-3-sm-mob.png");
+  background-image: radial-gradient(38.45% 38.77% at 35.45% 44.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url("../img/features-sm.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, auto 100%;
   background-position: 0 0, 0% 50%;
-  padding-inline-start: 145px;
+  padding-inline-start: 170px;
   padding-block-start: 82.04px;
-  padding-block-end: 85.81px; }
+  padding-block-end: 85.81px;
+  text-align: start; }
 
 .features_heading {
   padding-bottom: 40px; }
-
-.feature_container {
-  text-align: start; }
-
-.details_container > li + li {
-  padding-top: 43px; }
 
 .feature_summary {
   font-family: 'Bebas Neue';
@@ -114,15 +121,14 @@ span {
   letter-spacing: 2px;
   color: #FFB548; }
 
-details {
-  position: relative;
-  padding-inline-start: 2rem; }
+ul > li p {
+  margin: 0; }
 
-summary {
-  padding-inline-start: 1rem; }
+details {
+  position: relative; }
 
 summary::-webkit-details-marker {
-  visibility: hidden; }
+  display: none; }
 
 details[open] > summary::before {
   position: relative;
@@ -132,7 +138,9 @@ details[open] > summary::before {
   width: 1rem;
   top: 1rem;
   border-radius: 50%;
-  background-color: #fff; }
+  margin-inline-start: -1rem;
+  background-color: #fff;
+  z-index: 2; }
 
 details > summary::before {
   position: relative;
@@ -144,18 +152,37 @@ details > summary::before {
   left: -1rem;
   border-radius: 50%;
   background-color: #080A0B;
-  border: 1px solid #fff; }
+  border: 1px solid #fff;
+  margin-inline-start: -1rem;
+  z-index: 2; }
 
-details::after {
+details::before {
   content: '';
   width: 0.25rem;
+  height: 100%;
   position: absolute;
   top: 1rem;
-  left: 1.75rem;
+  left: -1.5rem;
   bottom: 1rem;
   background-color: #ccc;
-  margin-inline-start: -0.125rem;
   z-index: 1; }
+
+ul > li:last-child details::before {
+  top: -2rem; }
+
+@media (min-width: 1300px) {
+  .features {
+    background-image: radial-gradient(45.1% 80.48% at 10.85% 29.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("../img/bg-image-3.png");
+    background-size: cover, auto 100%;
+    background-position: 0 0, 0% 70%;
+    background-repeat: no-repeat;
+    padding-inline-start: 777px;
+    padding-inline-end: 237px; }
+  .feature_summary {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px; } }
 
 .language {
   display: block;
@@ -505,6 +532,10 @@ body > input[type="checkbox"]:checked ~ .menu__label {
 .requirement_container li:nth-child(5) {
   grid-column: 1 / 5; }
 
+@media (min-width: 1300px) {
+  .requirement {
+    background-image: url("../img/bg-image-4.png"); } }
+
 .language {
   display: block;
   text-indent: -9999px; }
@@ -610,7 +641,6 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   background-repeat: no-repeat, no-repeat;
   background-size: cover, auto 100%;
   background-position: 0 0, 0% 50%;
-  background-color: black;
   padding-block-start: 64.07px;
   padding-block-end: 61.37px; }
 
@@ -643,6 +673,13 @@ fieldset {
 
 .newsletter_discription {
   padding-block-end: 48px; }
+
+@media (min-width: 1300px) {
+  .newsletter {
+    background-image: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url("../img/newsletter.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, auto 100%;
+    background-position: 0 0, 10% 50%; } }
 
 .language {
   display: block;
