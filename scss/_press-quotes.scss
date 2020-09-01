@@ -1,7 +1,10 @@
 @import "variables";
 
 .press_quotes {
-    background: black;
+    background-image: radial-gradient(54.52% 60.27% at 22.21% 44.47%, rgba(255, 255, 255, 0) -22%, rgba(0, 0, 0, 0) -31.9%, #080A0B 36.74%);
+    background-position: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-block-start: 36.99px;
     padding-block-end: 46.98px;
 }

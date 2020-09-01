@@ -2,10 +2,11 @@
 
 .requirement {
     //background-color: rgb(11, 11, 3);
-    background-image: image('bg-image-4-sm.png');
+    background-image:   radial-gradient(38.54% 73.14% at 49.49% 68.05%, rgba(255, 255, 255, 0) 25.36%, rgba(0, 0, 0, 0) 29.19%, #080A0B 100%),
+                        image('requirements-sm.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: cover, auto 100%;
+    background-position: 0 0, 50% 0%;
     padding-block-start: 68.86px;
     padding-block-end: 234.32px;
 }
@@ -22,6 +23,7 @@
     line-height: 18px;
     letter-spacing: 2px;
     color: $list-head-colour;
+    padding-block-end: 16px;
 }
 
 .description {
@@ -37,6 +39,9 @@
     display: block;
     text-align: start;
     border: 0.504234px solid #979797;
+    padding-inline-start: 20px;
+    padding-block-end: 20px;
+    padding-block-start: 20px;
 }
 
 .requirement_container li:nth-child(1) {
