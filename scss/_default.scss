@@ -69,5 +69,10 @@ span {
     .article_questions {
         @include question_des;
     }
+    .subscribe {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
