@@ -78,9 +78,9 @@ span {
   padding-block-end: 15px;
   border: none; }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
     max-height: 100%;
     margin-left: auto;
     margin-right: auto; }
@@ -174,7 +174,7 @@ details::before {
 ul > li:last-child details::before {
   top: -2rem; }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .features {
     background-image: radial-gradient(45.1% 80.48% at 10.85% 29.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("../img/bg-image-3.png");
     background-size: cover, auto 100%;
@@ -291,7 +291,7 @@ body > input[type="checkbox"]:checked ~ .menu__label {
 .icons {
   display: none; }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .site_header {
     top: 10%; }
   body > .menu__label {
@@ -401,7 +401,7 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   width: 132.95px;
   height: 11px; }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .masthead {
     background-image: url("../img/bg-image.png");
     padding-block-start: 500px; }
@@ -489,10 +489,10 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   text-indent: -9999px; }
 
 .requirement {
-  background-image: radial-gradient(38.54% 73.14% at 49.49% 68.05%, rgba(255, 255, 255, 0) 25.36%, rgba(0, 0, 0, 0) 29.19%, #080A0B 100%), url("../img/requirements-sm.png");
+  background-image: radial-gradient(72.54% 29.14% at 44.49% 72.05%, rgba(255, 255, 255, 0) 25.36%, rgba(0, 0, 0, 0) 29.19%, #080A0B 100%), url("../img/requirements-sm.png");
   background-repeat: no-repeat;
-  background-size: cover, auto 100%;
-  background-position: 0 0, 50% 0%;
+  background-size: cover, 100%;
+  background-position: 0 0, 50% 100%;
   padding-block-start: 68.86px;
   padding-block-end: 234.32px; }
 
@@ -522,6 +522,7 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   text-align: start;
   border: 0.504234px solid #979797;
   padding-inline-start: 20px;
+  padding-inline-end: 30px;
   padding-block-end: 20px;
   padding-block-start: 20px; }
 
@@ -540,16 +541,34 @@ body > input[type="checkbox"]:checked ~ .menu__label {
 .requirement_container li:nth-child(5) {
   grid-column: 1 / 5; }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .requirement {
-    background-image: url("../img/bg-image-4.png"); } }
+    background-image: radial-gradient(35.26% 38% at 67.32% 48.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url("../img/bg-image-4.png");
+    background-repeat: no-repeat;
+    background-size: cover, auto 80%;
+    background-position: 0 0, 100% 30%;
+    padding-block-start: 145px; }
+  .requirement_container {
+    width: 57%; }
+  .requirement h3 {
+    padding-block-end: 70px; }
+  .requirement_container > li {
+    padding-block-end: 31px;
+    padding-inline-start: 15px; }
+  .description {
+    font-size: 18px;
+    line-height: 22px; }
+  .head {
+    font-size: 24px;
+    line-height: 24px;
+    padding-block-end: 7px; } }
 
 .language {
   display: block;
   text-indent: -9999px; }
 
 .press_quotes {
-  background-image: radial-gradient(54.52% 60.27% at 22.21% 44.47%, rgba(255, 255, 255, 0) -22%, rgba(0, 0, 0, 0) -31.9%, #080A0B 36.74%);
+  background-image: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.9) 10%, black 60%, #000 100%);
   background-position: 0%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -660,7 +679,7 @@ body > input[type="checkbox"]:checked ~ .menu__label {
 .quotes_aaron h4::after {
   left: 30%; }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .press_quotes__div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -704,10 +723,11 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   text-indent: -9999px; }
 
 .newsletter {
-  background-image: radial-gradient(38.45% 42.77% at 8.45% 36.62%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 59.99%, rgba(6, 7, 8, 0.739601) 72.03%, #080A0B 99.74%), url("../img/mayan-raul-sm.png");
+  background-image: radial-gradient(39.45% 36.77% at 13.45% 33.62%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 59.99%, rgba(6, 7, 8, 0.739601) 72.03%, #080A0B 99.74%), url("../img/mayan-raul-sm.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, auto 70%;
   background-position: 0 0, 0% 0%;
+  background-color: black;
   padding-block-start: 64.07px;
   padding-block-end: 61.37px; }
 
@@ -741,7 +761,7 @@ fieldset {
 .newsletter_discription {
   padding-block-end: 48px; }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .newsletter {
     background-image: linear-gradient(90deg, black 8%, rgba(0, 0, 0, 0) 19%, black 30%, #000 100%), url("../img/newsletter.png");
     background-repeat: no-repeat, no-repeat;
@@ -750,8 +770,7 @@ fieldset {
     padding-inline-start: 400px;
     padding-inline-end: 100px;
     padding-block-start: 220px;
-    padding-block-end: 142px;
-    background-color: black; }
+    padding-block-end: 142px; }
   .form_subscreibe {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -855,7 +874,7 @@ fieldset {
   padding-block-start: 19px;
   margin: 0; }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .footer {
     padding-block-start: 21px;
     padding-block-end: 47px; }

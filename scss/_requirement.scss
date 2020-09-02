@@ -2,11 +2,11 @@
 
 .requirement {
     //background-color: rgb(11, 11, 3);
-    background-image:   radial-gradient(38.54% 73.14% at 49.49% 68.05%, rgba(255, 255, 255, 0) 25.36%, rgba(0, 0, 0, 0) 29.19%, #080A0B 100%),
+    background-image:   radial-gradient(72.54% 29.14% at 44.49% 72.05%, rgba(255, 255, 255, 0) 25.36%, rgba(0, 0, 0, 0) 29.19%, #080A0B 100%),
                         image('requirements-sm.png');
     background-repeat: no-repeat;
-    background-size: cover, auto 100%;
-    background-position: 0 0, 50% 0%;
+    background-size: cover, 100%;
+    background-position: 0 0, 50% 100%;
     padding-block-start: 68.86px;
     padding-block-end: 234.32px;
 }
@@ -40,6 +40,7 @@
     text-align: start;
     border: 0.504234px solid #979797;
     padding-inline-start: 20px;
+    padding-inline-end: 30px;
     padding-block-end: 20px;
     padding-block-start: 20px;
 }
@@ -67,6 +68,31 @@
 
 @media (min-width: $desktop_min_width) {
     .requirement {
-        background-image: image('bg-image-4.png');
+        background-image:   radial-gradient(35.26% 38% at 67.32% 48.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%),
+                            image('bg-image-4.png');
+        background-repeat: no-repeat;
+        background-size: cover, auto 80%;
+        background-position: 0 0, 100% 30%;
+        padding-block-start: 145px;
+    }
+
+    .requirement_container {
+       width: 57%;
+    }
+    .requirement h3 {
+        padding-block-end: 70px;
+    }
+    .requirement_container > li {
+        padding-block-end: 31px;
+        padding-inline-start: 15px;
+    }
+    .description {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .head {
+        font-size: 24px;
+        line-height: 24px;
+        padding-block-end: 7px;
     }
 }

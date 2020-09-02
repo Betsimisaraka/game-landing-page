@@ -1,13 +1,13 @@
 @import "variables";
 
 .newsletter {
-    background-image: radial-gradient(38.45% 42.77% at 8.45% 36.62%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 59.99%, rgba(6, 7, 8, 0.739601) 72.03%, #080A0B 99.74%),  
+    background-image: radial-gradient(39.45% 36.77% at 13.45% 33.62%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 59.99%, rgba(6, 7, 8, 0.739601) 72.03%, #080A0B 99.74%),  
                         //linear-gradient(90deg,  black 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0 , 0, 1) 60%, #000 100%),
                         image('mayan-raul-sm.png');                  
     background-repeat: no-repeat, no-repeat;
     background-size: cover, auto 70%;
     background-position: 0 0, 0% 0%;
-    //background-color: black;
+    background-color: black;
     padding-block-start: 64.07px;
     padding-block-end: 61.37px;
 }
@@ -60,7 +60,6 @@ fieldset {
         padding-inline-end: 100px;
         padding-block-start: 220px;
         padding-block-end: 142px;
-        background-color: black;
     }
     .form_subscreibe {
        display: grid;
