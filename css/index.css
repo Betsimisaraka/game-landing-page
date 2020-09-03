@@ -441,6 +441,9 @@ body > input[type="checkbox"]:checked ~ .menu__label {
 .royal_game p:nth-child(2) {
   padding-block-end: 0; }
 
+figure {
+  margin: 0; }
+
 .picture {
   text-align: start;
   position: relative;
@@ -483,6 +486,76 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   padding-left: calc(100% * 24 / 249);
   right: 0;
   transform: scale(0.8); }
+
+.icons_switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 211px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  position: relative;
+  top: -3rem; }
+
+.icons_switch:after {
+  content: '';
+  width: 1.5rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 1.4rem;
+  left: 1rem;
+  bottom: 1rem;
+  background-color: #ccc; }
+
+.icons_switch li:nth-child(1) {
+  position: relative;
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  top: 1rem;
+  border-radius: 50%;
+  background-color: #fff; }
+
+.icons_switch li:nth-child(2),
+.icons_switch li:nth-child(3),
+.icons_switch li:nth-child(4),
+.icons_switch li:nth-child(5) {
+  position: relative;
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  top: 1rem;
+  border-radius: 50%;
+  border: 1px solid #fff; }
+
+@media (min-width: 1200px) {
+  .royal_game {
+    background-image: url("../img/bg-image-2-des.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-block-start: 255px;
+    padding-block-end: 358px; }
+  .royal_game__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  figure {
+    background-image: url("../img/switch-vector.svg");
+    background-size: 34px 20px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding-inline-end: 48px; }
+  .picture {
+    padding-inline-end: 400px;
+    padding-block-end: 0; }
+  .royal_game__heading {
+    padding-inline-end: 178px;
+    padding-block-end: 0; }
+  .royal_game .royal_game__description {
+    padding-inline-start: 250px; }
+  .royal_game p:nth-child(2) {
+    padding-block-start: 60px; } }
 
 .language {
   display: block;
