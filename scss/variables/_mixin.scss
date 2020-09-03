@@ -7,6 +7,26 @@
     @include text-indent;
 }
 
+@mixin smallest-font {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@mixin open-sas-bold {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+%small-font-size {
+    @include smallest-font;
+}
+
 @mixin nav-ul {
     list-style: none;
     margin: 0;
@@ -23,6 +43,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @mixin containers {

@@ -13,10 +13,7 @@
 }
 
 .container1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-row;
 }
 
 body > header .site_header__heading {
@@ -30,7 +27,7 @@ body > header .site_header__heading {
     width: 33px;
 }
 
-.form {
+.select {
     position: absolute;
     top: 0%;
     left: 50%;
@@ -54,14 +51,10 @@ input[type="checkbox"] {
 }
 
 #lang_dropdown {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: bold;
+    @include open-sas-bold;
     font-size: calc(#{$base_font_size} - 4px);
     line-height: 16px;
     text-align: right;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
 }
 
 .navigation {
@@ -69,7 +62,7 @@ input[type="checkbox"] {
     top: 0;
     bottom: 0;
     left: 0;
-    transform: translateX(-150%);
+    transform: translateX(-100%);
     transition: transform .2s;
     box-shadow: 50px 10px 50px rgba(124, 107, 107, 0.25);
     z-index: 1;
@@ -81,13 +74,10 @@ input[type="checkbox"] {
 
 .navigation_container a {
     text-decoration: none;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: bold;
+    @include open-sas-bold;
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    text-align: start;
     color: $base-colour;
    }
 
@@ -99,10 +89,8 @@ input[type="checkbox"] {
        display: block;
    }
   
-//   /*Create alternative state: open /checked */
-  
   input[type="checkbox"]:checked ~ header .navigation {
-    transform: translateX(-10%);
+    transform: translateX(0%);
   }
   
   body > input[type="checkbox"]:checked ~ .menu__label {
@@ -110,7 +98,7 @@ input[type="checkbox"] {
     top: 0;
     bottom: 0;
     right: 0;
-    left: -10%;
+    left: 0%;
     height: 100%;
     width: 100%;
 }
@@ -148,10 +136,7 @@ input[type="checkbox"] {
     height: auto;
   }
   .navigation_container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      @include flex-row;
       flex-wrap: wrap;
   }
 
@@ -166,7 +151,6 @@ input[type="checkbox"] {
         display: inline-flex;
         justify-content: space-between;
         border-left: 0.873968px solid rgba(255, 255, 255, 0.5);
-        //width: 80px;
         & li {
             margin-inline-start: 16px;
         }
@@ -185,17 +169,27 @@ input[type="checkbox"] {
         background-image: image("steam-icon.svg");   
     }
 
-    // #lang_drowpdown {
-    //     color: $base-colour;
+    // option {
+    //     background: rgba(0, 0, 0, 0.75);
+    //     border-radius: 3px;
+    //     padding-block-start: 1rem;
     // }
 
-    // #lang_dropdown:hover {
-    //     color: $list-head-colour;
+    // .form *,
+    // *::before,
+    // *::after {
+    // box-sizing: border-box;
     // }
 
-    option {
-        background: rgba(0, 0, 0, 0.75);
-        border-radius: 3px;
-        padding-block-start: 1rem;
-    }
+    // select {
+    //     // appearance: none;
+    //     // background-color: transparent;
+    //     border: none;
+    //     padding: 0 1em 0 0;
+    //     margin: 0;
+    //     width: 100%;
+    //   }
+    // select::-ms-expand {
+    // display: none;
+    // }
 }
