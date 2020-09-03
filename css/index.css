@@ -2,6 +2,13 @@
   display: block;
   text-indent: -9999px; }
 
+.copyright {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px; }
+
 @font-face {
   font-family: "Bebas Neue";
   src: local("Bebas Neue Bold"), local("Bebas-Neue-Bold"), url("../fonts/babasneue-bold.woff2") format(woff2), url("../fonts/babasneue-bold.woff") format(woff);
@@ -23,6 +30,13 @@
 .language {
   display: block;
   text-indent: -9999px; }
+
+.copyright {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px; }
 
 html {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -104,6 +118,13 @@ span {
 .language {
   display: block;
   text-indent: -9999px; }
+
+.copyright {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px; }
 
 .features {
   background-image: radial-gradient(38.45% 38.77% at 35.45% 44.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url("../img/features-sm.png");
@@ -192,6 +213,13 @@ ul > li:last-child details::before {
   display: block;
   text-indent: -9999px; }
 
+.copyright {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px; }
+
 .site_header {
   position: absolute;
   width: 100%;
@@ -215,7 +243,7 @@ body > header .site_header__heading {
   background-size: 32px 32px;
   width: 33px; }
 
-.form {
+.select {
   position: absolute;
   top: 0%;
   left: 50%; }
@@ -239,18 +267,18 @@ input[type="checkbox"] {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   font-size: calc(16px - 4px);
   line-height: 16px;
-  text-align: right;
-  letter-spacing: 0.1em;
-  text-transform: uppercase; }
+  text-align: right; }
 
 .navigation {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  transform: translateX(-150%);
+  transform: translateX(-100%);
   transition: transform .2s;
   box-shadow: 50px 10px 50px rgba(124, 107, 107, 0.25);
   z-index: 1;
@@ -264,10 +292,11 @@ input[type="checkbox"] {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: start;
   color: #FFFFFF; }
 
 .navigation_container a:hover {
@@ -277,14 +306,14 @@ input[type="checkbox"] {
   display: block; }
 
 input[type="checkbox"]:checked ~ header .navigation {
-  transform: translateX(-10%); }
+  transform: translateX(0%); }
 
 body > input[type="checkbox"]:checked ~ .menu__label {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
-  left: -10%;
+  left: 0%;
   height: 100%;
   width: 100%; }
 
@@ -343,15 +372,18 @@ body > input[type="checkbox"]:checked ~ .menu__label {
   .icons li:nth-child(1) a {
     background-image: url("../img/xbox-icon.svg"); }
   .icons li:nth-child(2) a {
-    background-image: url("../img/steam-icon.svg"); }
-  option {
-    background: rgba(0, 0, 0, 0.75);
-    border-radius: 3px;
-    padding-block-start: 1rem; } }
+    background-image: url("../img/steam-icon.svg"); } }
 
 .language {
   display: block;
   text-indent: -9999px; }
+
+.copyright {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px; }
 
 .masthead {
   background-image: url("../img/image-sc-sm.png");
@@ -415,6 +447,13 @@ body > input[type="checkbox"]:checked ~ .menu__label {
 .language {
   display: block;
   text-indent: -9999px; }
+
+.copyright {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px; }
 
 .royal_game {
   background-image: url("../img/image-2-sm.png"), url("../img/image-1.svg"), url("../img/image-2.svg");
@@ -561,6 +600,13 @@ figure {
   display: block;
   text-indent: -9999px; }
 
+.copyright {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px; }
+
 .requirement {
   background-image: radial-gradient(72.54% 29.14% at 44.49% 72.05%, rgba(255, 255, 255, 0) 25.36%, rgba(0, 0, 0, 0) 29.19%, #080A0B 100%), url("../img/requirements-sm.png");
   background-repeat: no-repeat;
@@ -639,6 +685,13 @@ figure {
 .language {
   display: block;
   text-indent: -9999px; }
+
+.copyright {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px; }
 
 .press_quotes {
   background-image: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.9) 10%, black 60%, #000 100%);
@@ -795,6 +848,13 @@ figure {
   display: block;
   text-indent: -9999px; }
 
+.copyright {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px; }
+
 .newsletter {
   background-image: radial-gradient(39.45% 36.77% at 13.45% 33.62%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 59.99%, rgba(6, 7, 8, 0.739601) 72.03%, #080A0B 99.74%), url("../img/mayan-raul-sm.png");
   background-repeat: no-repeat, no-repeat;
@@ -858,6 +918,13 @@ fieldset {
 .language {
   display: block;
   text-indent: -9999px; }
+
+.copyright {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px; }
 
 .footer {
   background-color: black;
@@ -936,12 +1003,6 @@ fieldset {
   background-image: url("../img/group.svg"); }
 
 .copyright {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  mix-blend-mode: normal;
   opacity: 0.5;
   padding-block-end: 13px;
   padding-block-start: 19px;
@@ -975,30 +1036,34 @@ fieldset {
   .list_container {
     display: flex;
     flex-direction: row;
-    align-self: center;
+    justify-content: space-between;
+    align-items: center;
     height: 0; }
     .list_container li {
       margin-inline-end: 23px; }
-  .social__container {
-    margin-block-start: 0;
-    align-self: center; }
+  .social__container li {
+    margin-block-start: 2rem; }
   .copyright_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-block-start: 22px; }
   .copyright {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    font-size: 14px;
+    line-height: 19px; }
+  .footer_link {
+    line-height: 16px; }
   .footer_privicy {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     .footer_privicy li + li {
       margin-inline-start: 1rem; }
   .footer_privicy li:nth-child(2) {
-    border-inline-start: 1px solid grey;
-    border-inline-end: 1px solid grey;
     padding-inline-start: 1rem;
     padding-inline-end: 1rem;
     margin-inline-end: 0;
